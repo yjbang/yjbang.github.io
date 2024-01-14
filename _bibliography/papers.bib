@@ -1,84 +1,285 @@
----
----
 
-@string{aps = {American Physical Society,}}
+# ==================================================================
+# 2023
+# ==================================================================
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{bang-etal-2023-mitigating,
+   abbr={EMNLP},
+   title = "Mitigating Framing Bias with Polarity Minimization Loss",
+    author = "Bang, Yejin  and
+      Lee, Nayeon  and
+      Fung, Pascale",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.742",
+    html = "https://aclanthology.org/2023.findings-emnlp.742",
+    doi = "10.18653/v1/2023.findings-emnlp.742",
+    pages = "11100--11110",
+    abstract = "Framing bias plays a significant role in exacerbating political polarization by distorting the perception of actual events. Media outlets with divergent political stances often use polarized language in their reporting of the same event. We propose a new loss function that encourages the model to minimize the polarity difference between the polarized input articles to reduce framing bias. Specifically, our loss is designed to jointly optimize the model to map polarity ends bidirectionally. Our experimental results demonstrate that incorporating the proposed polarity minimization loss leads to a substantial reduction in framing bias when compared to a BART-based multi-document summarization model. Notably, we find that the effectiveness of this approach is most pronounced when the model is trained to minimize the polarity loss associated with informational framing bias (i.e., skewed selection of information to report).",
+    bibtex_show={true},
+    selected={true}
+
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
+@article{bang2023multitask,
+  abbr={AACL},
+  title={A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity},
+  author={Bang, Yejin and Cahyawijaya, Samuel and Lee, Nayeon and Dai, Wenliang and Su, Dan and Wilie, Bryan and Lovenia, Holy and Ji, Ziwei and Yu, Tiezheng and Chung, Willy and others},
+  journal={AACL 2023},
+  abstract ="This paper proposes a framework for quantitatively evaluating interactive LLMs such as ChatGPT using publicly available data sets. We carry out an extensive technical evaluation of ChatGPT using 23 data sets covering 8 different common NLP application tasks. We evaluate the multitask, multilingual and multi-modal aspects of ChatGPT based on these data sets and a newly designed multimodal dataset. We find that ChatGPT outperforms LLMs with zero-shot learning on most tasks and even outperforms fine-tuned models on some tasks. We find that it is better at understanding non-Latin script languages than generating them. It is able to generate multimodal content from textual prompts, via an intermediate code generation step. Moreover, we find that ChatGPT is 63.41% accurate on average in 10 different reasoning categories under logical reasoning, non-textual reasoning, and commonsense reasoning, hence making it an unreliable reasoner. It is, for example, better at deductive than inductive reasoning. ChatGPT suffers from hallucination problems like other LLMs and it generates more extrinsic hallucinations from its parametric memory as it does not have access to an external knowledge base. Finally, the interactive feature of ChatGPT enables human collaboration with the underlying LLM to improve its performance, i.e, 8% ROUGE-1 on summarization and 2% ChrF++ on machine translation, in a multi-turn prompt engineering fashion. We also release codebase for evaluation set extraction.",
+  month = nov,
+  year={2023},
   bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
+  html = "https://arxiv.org/abs/2302.04023",
   selected={true}
+
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+
+@inproceedings{bang-etal-2023-enabling,
+    abbr={TrustNLP},
+    title = "Enabling Classifiers to Make Judgements Explicitly Aligned with Human Values",
+    author = "Bang, Yejin  and
+      Yu, Tiezheng  and
+      Madotto, Andrea  and
+      Lin, Zhaojiang  and
+      Diab, Mona  and
+      Fung, Pascale",
+    editor = "Ovalle, Anaelia  and
+      Chang, Kai-Wei  and
+      Mehrabi, Ninareh  and
+      Pruksachatkun, Yada  and
+      Galystan, Aram  and
+      Dhamala, Jwala  and
+      Verma, Apurv  and
+      Cao, Trista  and
+      Kumar, Anoop  and
+      Gupta, Rahul",
+    booktitle = "Proceedings of the 3rd Workshop on Trustworthy Natural Language Processing (TrustNLP 2023)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.trustnlp-1.27",
+    html = "https://aclanthology.org/2023.trustnlp-1.27",
+    doi = "10.18653/v1/2023.trustnlp-1.27",
+    pages = "311--325",
+    abstract = "Many NLP classification tasks, such as sexism/racism detection or toxicity detection, are based on human values. Yet, human values can vary under diverse cultural conditions. Therefore, we introduce a framework for value-aligned classification that performs prediction based on explicitly written human values in the command. Along with the task, we propose a practical approach that distills value-aligned knowledge from large-scale language models (LLMs) to construct value-aligned classifiers in two steps. First, we generate value-aligned training data from LLMs by prompt-based few-shot learning. Next, we fine-tune smaller classification models with the generated data for the task. Empirical results show that our VA-Models surpass multiple baselines by at least 15.56{\%} on the F1-score, including few-shot learning with OPT-175B and existing text augmentation methods. We suggest that using classifiers with explicit human value input improves both inclusivity {\&} explainability in AI.",
+    selected={true},
+    bibtex_show={true},
+
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@article{10.1145/3571730,
+  abbr={ACM Surveys},
+author = {Ji, Ziwei and Lee, Nayeon and Frieske, Rita and Yu, Tiezheng and Su, Dan and Xu, Yan and Ishii, Etsuko and Bang, Ye Jin and Madotto, Andrea and Fung, Pascale},
+title = {Survey of Hallucination in Natural Language Generation},
+year = {2023},
+issue_date = {December 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {55},
+number = {12},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3571730},
+html = {https://doi.org/10.1145/3571730},
+doi = {10.1145/3571730},
+abstract = {Natural Language Generation (NLG) has improved exponentially in recent years thanks to the development of sequence-to-sequence deep learning technologies such as Transformer-based language models. This advancement has led to more fluent and coherent NLG, leading to improved development in downstream tasks such as abstractive summarization, dialogue generation, and data-to-text generation. However, it is also apparent that deep learning based generation is prone to hallucinate unintended text, which degrades the system performance and fails to meet user expectations in many real-world scenarios. To address this issue, many studies have been presented in measuring and mitigating hallucinated texts, but these have never been reviewed in a comprehensive manner before.In this survey, we thus provide a broad overview of the research progress and challenges in the hallucination problem in NLG. The survey is organized into two parts: (1) a general overview of metrics, mitigation methods, and future directions, and (2) an overview of task-specific research progress on hallucinations in the following downstream tasks, namely abstractive summarization, dialogue generation, generative question answering, data-to-text generation, and machine translation. This survey serves to facilitate collaborative efforts among researchers in tackling the challenge of hallucinated texts in NLG.},
+journal = {ACM Comput. Surv.},
+month = {mar},
+articleno = {248},
+numpages = {38},
+keywords = {consistency in NLG, extrinsic hallucination, intrinsic hallucination, faithfulness in NLG, Hallucination, factuality in NLG},
+bibtex_show={true},
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+
+@article{lee2023survey,
+  abbr={Arxiv},
+  title={Survey of Social Bias in Vision-Language Models},
+  author={Lee, Nayeon and Bang, Yejin and Lovenia, Holy and Cahyawijaya, Samuel and Dai, Wenliang and Fung, Pascale},
+  journal={arXiv preprint arXiv:2309.14381},
+  year={2023}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@inproceedings{bang2023towards,
+  abbr={AI4SG},
+  title={Towards Answering Open-ended Ethical Quandary Questions},
+  author={Bang, Yejin and Lee, Nayeon and Yu, Tiezheng and Khalatbari, Leila and Xu, Yan and Cahyawijaya, Samuel and Su, Dan and Wilie, Bryan and Barraud, Romain and Barezi, Elham J and others},
+  booktitle={AI for Social Good Workshop @AAAI 2023},
+  year={2023}
 }
+
+
+@article{khalatbari2023learn,
+  abbr={Arxiv},
+  title={Learn What NOT to Learn: Towards Generative Safety in Chatbots},
+  author={Khalatbari, Leila and Bang, Yejin and Su, Dan and Chung, Willy and Ghadimi, Saeed and Sameti, Hossein and Fung, Pascale},
+  journal={arXiv preprint arXiv:2304.11220},
+  year={2023}
+}
+
+
+# ==================================================================
+# 2022
+# ==================================================================
+
+
+@article{hazirbas2022casual,
+   abbr={Arxiv},
+  title={Casual Conversations v2: Designing a large consent-driven dataset to measure algorithmic bias and robustness},
+  author={Hazirbas, Caner and Bang, Yejin and Yu, Tiezheng and Assar, Parisa and Porgali, Bilal and Albiero, V{\'\i}tor and Hermanek, Stefan and Pan, Jacqueline and McReynolds, Emily and Bogen, Miranda and others},
+  journal={arXiv preprint arXiv:2211.05809},
+  year={2022}
+}
+
+
+
+# ==================================================================
+# 2021
+# ==================================================================
+
+@inproceedings{bang-etal-2021-assessing,
+  abbr={SIGDIAL},
+    title = "Assessing Political Prudence of Open-domain Chatbots",
+    author = "Bang, Yejin  and
+      Lee, Nayeon  and
+      Ishii, Etsuko  and
+      Madotto, Andrea  and
+      Fung, Pascale",
+    editor = "Li, Haizhou  and
+      Levow, Gina-Anne  and
+      Yu, Zhou  and
+      Gupta, Chitralekha  and
+      Sisman, Berrak  and
+      Cai, Siqi  and
+      Vandyke, David  and
+      Dethlefs, Nina  and
+      Wu, Yan  and
+      Li, Junyi Jessy",
+    booktitle = "Proceedings of the 22nd Annual Meeting of the Special Interest Group on Discourse and Dialogue",
+    month = jul,
+    year = "2021",
+    address = "Singapore and Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.sigdial-1.57",
+    html = "https://aclanthology.org/2021.sigdial-1.57",
+    doi = "10.18653/v1/2021.sigdial-1.57",
+    pages = "548--555",
+    abstract = "Politically sensitive topics are still a challenge for open-domain chatbots. However, dealing with politically sensitive content in a responsible, non-partisan, and safe behavior way is integral for these chatbots. Currently, the main approach to handling political sensitivity is by simply changing such a topic when it is detected. This is safe but evasive and results in a chatbot that is less engaging. In this work, as a first step towards a politically safe chatbot, we propose a group of metrics for assessing their political prudence. We then conduct political prudence analysis of various chatbots and discuss their behavior from multiple angles through our automatic metric and human evaluation metrics. The testsets and codebase are released to promote research in this area.",
+    bibtex_show=True
+}
+
+@inproceedings{lee-etal-2021-towards,
+    abbr={NAACL},
+    title = "Towards Few-shot Fact-Checking via Perplexity",
+    author = "Lee, Nayeon  and
+      Bang, Yejin  and
+      Madotto, Andrea  and
+      Fung, Pascale",
+    editor = "Toutanova, Kristina  and
+      Rumshisky, Anna  and
+      Zettlemoyer, Luke  and
+      Hakkani-Tur, Dilek  and
+      Beltagy, Iz  and
+      Bethard, Steven  and
+      Cotterell, Ryan  and
+      Chakraborty, Tanmoy  and
+      Zhou, Yichao",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.158",
+    html = "https://aclanthology.org/2021.naacl-main.158",
+    doi = "10.18653/v1/2021.naacl-main.158",
+    pages = "1971--1981",
+    abstract = "Few-shot learning has drawn researchers{'} attention to overcome the problem of data scarcity. Recently, large pre-trained language models have shown great performance in few-shot learning for various downstream tasks, such as question answering and machine translation. Nevertheless, little exploration has been made to achieve few-shot learning for the fact-checking task. However, fact-checking is an important problem, especially when the amount of information online is growing exponentially every day. In this paper, we propose a new way of utilizing the powerful transfer learning ability of a language model via a perplexity score. The most notable strength of our methodology lies in its capability in few-shot learning. With only two training samples, our methodology can already outperform the Major Class baseline by more than an absolute 10{\%} on the F1-Macro metric across multiple datasets. Through experiments, we empirically verify the plausibility of the rather surprising usage of the perplexity score in the context of fact-checking and highlight the strength of our few-shot methodology by comparing it to strong fine-tuning-based baseline models. Moreover, we construct and publicly release two new fact-checking datasets related to COVID-19.",
+    bibtex_show=True
+
+}
+
+@article{Lin_Madotto_Bang_Fung_2021,
+    abbr={AAAI},
+    title={The Adapter-Bot: All-In-One Controllable Conversational Model}, 
+    volume={35}, 
+    url={https://ojs.aaai.org/index.php/AAAI/article/view/18018},
+    html={https://ojs.aaai.org/index.php/AAAI/article/view/18018},
+    doi={10.1609/aaai.v35i18.18018}, 
+    abstract={In this paper, we present the Adapter-Bot, a generative chat-bot that uses a fixed backbone conversational model such as DialGPT (Zhang et al. 2019) and triggers on-demand dialogue skills via different adapters (Houlsby et al. 2019). Each adapter can be trained independently, thus allowing a continual integration of skills without retraining the entire model. Depending on the skills, the model is able to process multiple knowledge types, such as text, tables, and graphs, in a seamless manner. The dialogue skills can be triggered automatically via a dialogue manager, or manually, thus allowing high-level control of the generated responses. At the current stage, we have implemented 12 response styles (e.g., positive, negative etc.), 6 goal-oriented skills (e.g. weather information, movie recommendation, etc.), and personalized and emphatic responses.}, number={18}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+    author={Lin, Zhaojiang and Madotto, Andrea and Bang, Yejin and Fung, Pascale},
+    year={2021}, month={May}, 
+    pages={16081-16083},
+    bibtex_show=True }
+
+
+@article{lee2021dynamically,
+  abbr={Arxiv},
+  title={Dynamically addressing unseen rumor via continual learning},
+  author={Lee, Nayeon and Madotto, Andrea and Bang, Yejin and Fung, Pascale},
+  journal={arXiv preprint arXiv:2104.08775},
+  year={2021},
+  bibtex_show=True
+}
+
+@article{dai2021weakly,
+  abbr={Arxiv},
+  title={Weakly-supervised multi-task learning for multimodal affect recognition},
+  author={Dai, Wenliang and Cahyawijaya, Samuel and Bang, Yejin and Fung, Pascale},
+  journal={arXiv preprint arXiv:2104.11560},
+  year={2021},
+  bibtex_show=True
+}
+
+@inproceedings{lin-etal-2021-xpersona,
+abbr={NLP4ConvAI},
+    title = "{XP}ersona: Evaluating Multilingual Personalized Chatbot",
+    author = "Lin, Zhaojiang  and
+      Liu, Zihan  and
+      Winata, Genta Indra  and
+      Cahyawijaya, Samuel  and
+      Madotto, Andrea  and
+      Bang, Yejin  and
+      Ishii, Etsuko  and
+      Fung, Pascale",
+    editor = "Papangelis, Alexandros  and
+      Budzianowski, Pawe{\l}  and
+      Liu, Bing  and
+      Nouri, Elnaz  and
+      Rastogi, Abhinav  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 3rd Workshop on Natural Language Processing for Conversational AI",
+    month = nov,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.nlp4convai-1.10",
+    html = "https://aclanthology.org/2021.nlp4convai-1.10",
+    doi = "10.18653/v1/2021.nlp4convai-1.10",
+    pages = "102--112",
+    abstract = "Personalized dialogue systems are an essential step toward better human-machine interaction. Existing personalized dialogue agents rely on properly designed conversational datasets, which are mostly monolingual (e.g., English), which greatly limits the usage of conversational agents in other languages. In this paper, we propose a multi-lingual extension of Persona-Chat, namely XPersona. Our dataset includes persona conversations in six different languages other than English for evaluating multilingual personalized agents. We experiment with both multilingual and cross-lingual trained baselines and evaluate them against monolingual and translation-pipeline models using both automatic and human evaluation. Experimental results show that the multilingual trained models outperform the translation pipeline and that they are on par with the monolingual models, with the advantage of having a single model across multiple languages. On the other hand, the state-of-the-art cross-lingual trained models achieve inferior performance to the other models, showing that cross-lingual conversation modeling is a challenging task. We hope that our dataset and baselines will accelerate research in multilingual dialogue systems.",
+    bibtex_show=True
+}
+
+
+# ==================================================================
+# 2019
+# ==================================================================
+
+
+@inproceedings{lee2019understanding,
+  abbr={WiNLP'19},
+  title={Understanding the shades of sexism in popular TV series},
+  author={Lee, Nayeon and Bang, Yejin and Shin, Jamin and Fung, Pascale},
+  booktitle={Proceedings of the 2019 Workshop on Widening NLP},
+  pages={122--125},
+  year={2019}
+}
+
